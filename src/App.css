@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 10vw;
+  height: 100vh;
+  position: sticky;
+  background-color: grey;
+  gap: 20px;
+  padding: 10px;
+}
+.submenu{
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 100vh;
+  position: sticky;
+  background-color: rgb(125, 154, 218);
+  gap: 20px;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.btn{
+  background: seagreen;
+  border: none;
+  border-radius: 8px;
   color: white;
+  padding: 4px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-sub{
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  color: rgb(20, 14, 135);
+  padding: 4px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+  background-color: rgb(12, 124, 60);
+}
+.btn-active{
+  background-color: rgb(255, 255, 255);
+  color: seagreen;
+}
+.btn-sub-active{
+  background-color: rgb(20, 89, 108);
+  color: white;
 }
